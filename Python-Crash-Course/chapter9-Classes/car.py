@@ -23,7 +23,9 @@ class Car():
         else:
             self.odometer_reading += mileage
 
+"""
 my_new_car = Car(make="audi", model="a4", year=2016)
+
 print(my_new_car.get_descriptive_name())
 my_new_car.read_odometer()
 
@@ -36,6 +38,7 @@ my_new_car.read_odometer()
 
 my_new_car.update_odometer(mileage=-20)
 my_new_car.read_odometer()
+"""
 
 """
 Every attribute in a class needs an initial value, even if that value is 0 or an empty string.
