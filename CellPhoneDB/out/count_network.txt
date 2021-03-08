@@ -1,0 +1,17 @@
+SOURCE	TARGET	count
+NKcells_1	NKcells_1	5
+NKcells_1	NKcells_0	15
+NKcells_1	Tcells	10
+NKcells_1	Myeloid	13
+NKcells_0	NKcells_1	15
+NKcells_0	NKcells_0	12
+NKcells_0	Tcells	13
+NKcells_0	Myeloid	35
+Tcells	NKcells_1	10
+Tcells	NKcells_0	13
+Tcells	Tcells	1
+Tcells	Myeloid	19
+Myeloid	NKcells_1	13
+Myeloid	NKcells_0	35
+Myeloid	Tcells	19
+Myeloid	Myeloid	21
