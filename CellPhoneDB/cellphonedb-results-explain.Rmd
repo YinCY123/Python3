@@ -1,0 +1,48 @@
+---
+title: "cellphonedb-results-explain"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Without running statistical inference of receptor-ligand interactions, only "means.csv" and "desconvoluted.csv" are generated. The "means.csv" file contains mean values for each ligand-receptor interaction. The "deconvoluted.csv" file gives additional information for each of the interacting partners. This is important as some of the interacting partners are heteromers. In other words, multiple molecules have to be expressed in the same cluster in order for the interacting partner to be functional. If the user uses the statistical inference approach, additional "pvalues.csv" and "significant_means.csv" file are generated with the values for the significant interactions.  
+
+It is important to bear in mind that the interactions are not symmetric. In other words, when testing a ligand/receptor pair A_B between clusters X_Y, the expression of partner A is considered within the first cluster (X), and the expression of partner B within the second cluster (Y). Therefore, X_Y and Y_X represent different comparisons and will have different p-values and means.  
+
+**Description of the output files means.csv, pvalues.csv, and significant_means.csv**  
+
+|**Identifier**|**Definition**|**Output file**|**Example**|
+|:--|:--|:--|:--|
+|id_cp_interaction|Unique CellPhoneDB identifier for each interaction stored in the database.|means.csv; pvalues.csv; significant_means.csv|CPI-SS096F3E0F2|
+|interacting_pair|Name of the interacting pairs separated by "|".|means.csv; pvalues.csv; significant_means.csv|JAG2|NOTCH4|
+|partner A or B|Identifier for the first interacting partner (A) or the second (B). It could be: UniProt (prefix simple:) or complex (prefix complex:) |means.csv; pvalues.csv; significant_means.csv|simple:Q9Y219|
+|gene A or B|Gene identifier for the first interacting partner (A) or the second (B). The identifier will depend on the input user list.|means.csv; pvalues.csv; significant_means.csv|ENSG00000184916|
+|secreted|True if one of the partners is secreted.|means.csv; pvalues.csv; significant_means.csv|FALSE|
+|Receptor A or B|True if the first interacting partner (A) or the second (B) is annotated as a receptor in our database.|means.csv; pvalues.csv; significant_means.csv|FALSE|
+|annotation_strategy|Curated if the interaction was annotated by the CellPhoneDB developers. Otherwise, the name of the database where the interaction has been downloaded from.|means.csv; pvalues.csv; significant_means.csv|curated|
+|is_integrin|True if one of the partners is integrin.|means.csv; pvalues.csv; significant_means.csv|FALSE|
+|rank|Total number of significant p-values for each interaction divided by the number of cell type-cell type comparisons.|significant_means.csv|0.25|
+|means|Mean values for all the interacting partners: mean value refers to the total mean of the individual partner average expression values in the corresponding interacting pairs of cell types. If one of the mean values is 0, then the total mean is set to 0.|means.csv|0.53|
+|p.values|p-values for the all the interacting partners: p.value refers to the enrichment of the interacting ligand-receptor pair in each of the interacting pairs of cell types.|pvalues.csv|0.01|
+|significant_mean|Significant mean calculation for all the interacting partners. If p.value < 0.05, the value will be the mean. Alternatively, the value is set to 0.|significant_means.csv|0.53|
+
+
+**Description of the output file deconvoluted.csv**  
+
+|**Identifier**|**Definition**|**Output file**|**Example**|
+|:--|:--|:--|:--|
+|gene_name|Gene identifier for one of the subunits that are participating in the interaction defined in "means.csv" file. The identifier will depend on the input of the user list.|deconvoluted.csv|JAG2|
+|uniprot|UniProt identifier for one of the subunits that are participating in the interaction defined in "means.csv" file. |deconvoluted.csv|Q9Y219|
+|is_complex|True if the subunit is part of a complex. Single if it is not, complex if it is.|deconvoluted.csv|FALSE|
+|protein_name|Protein name for one of the subunits that are participating in the interaction defined in "means.csv" file.|deconvoluted.csv|JAG2_HUMAN|
+|complex_name|Complex name if the subunit is part of a complex. Empty if not.|deconvoluted.csv|a10b1 complex|
+|id_cp_interaction|Unique CellPhoneDB identifier for each of the interactions stored in the database. |deconvoluted.csv|CPI-SS0DB3F5A37|
+|mean|Mean expression of the corresponding gene in each cluster.||0.9|
+
+
+
+
+
+
