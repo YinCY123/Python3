@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="35c12365-bbab-4921-97ce-f041766d9378" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seq.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeqIO.py" beforeDir="false" afterPath="$PROJECT_DIR$/SeqIO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Unconfirmed 241073.crdownload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ls_orchid.gb" beforeDir="false" afterPath="$PROJECT_DIR$/data/ls_orchid.gb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,8 +184,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.SeqIO" />
-        <item itemvalue="Python.SeqRecord" />
         <item itemvalue="Python.Seq (1)" />
+        <item itemvalue="Python.SeqRecord" />
         <item itemvalue="Python.SeqFeature" />
         <item itemvalue="Python.MutableSeq" />
       </list>

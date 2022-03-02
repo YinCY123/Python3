@@ -12,6 +12,7 @@ from Bio.Seq import Seq
 from Bio.SeqUtils import GC
 from Bio.Data import CodonTable
 from Bio.Seq import MutableSeq
+from Bio import SeqIO
 
 '''
 my_seq = Seq("GATCG")
@@ -126,7 +127,6 @@ mutable_seq.reverse()
 print(mutable_seq)
 
 '''
-
 
 
 

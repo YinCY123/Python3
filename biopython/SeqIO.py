@@ -19,9 +19,8 @@ from Bio import SeqIO
 # identifiers = [seq_record.id for seq_record in SeqIO.parse("data/ls_orchid.gb", format = "genbank")]
 # print(identifiers)
 
-record_iterator = SeqIO.parse("data/ls_orchid.gb", format = "genbank")
-first_record = next(record_iterator)
-print(first_record)
-
+# record_iterator = SeqIO.parse("data/ls_orchid.gb", format = "genbank")
+# first_record = next(record_iterator)
+# print(first_record)
 
 
