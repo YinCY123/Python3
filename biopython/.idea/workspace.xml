@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="35c12365-bbab-4921-97ce-f041766d9378" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SeqIO.py" beforeDir="false" afterPath="$PROJECT_DIR$/SeqIO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Unconfirmed 241073.crdownload" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ls_orchid.gb" beforeDir="false" afterPath="$PROJECT_DIR$/data/ls_orchid.gb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +41,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -54,8 +52,8 @@
       <recent name="F:\git\Python3\biopython\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.SeqIO">
-    <configuration name="MutableSeq" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.MultipleSeqAlignment">
+    <configuration name="MultipleSeqAlignment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="biopython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,7 +65,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MutableSeq.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MultipleSeqAlignment.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MultipleSeqAlignment" />
         <item itemvalue="Python.SeqIO" />
         <item itemvalue="Python.Seq (1)" />
         <item itemvalue="Python.SeqRecord" />
         <item itemvalue="Python.SeqFeature" />
-        <item itemvalue="Python.MutableSeq" />
       </list>
     </recent_temporary>
   </component>
