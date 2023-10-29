@@ -1,0 +1,2 @@
+# add jupyter notebook python kernel
+python -m ipykernel install --user --name env_1 --display-name "env_1"
